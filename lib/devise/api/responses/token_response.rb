@@ -43,7 +43,7 @@ module Devise
             token_type: ::Devise.api.config.authorization.scheme,
             resource_owner: {
               id: resource_owner.id,
-              email: resource_owner.email,
+              login: resource_owner.login,
               created_at: resource_owner.created_at,
               updated_at: resource_owner.updated_at
             }
